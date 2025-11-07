@@ -19,3 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const playButton = document.getElementById('play-bttn');
+  if (playButton) {
+    playButton.addEventListener('click', () => {
+      playButton.classList.toggle('active');
+    });
+  } else {
+    console.error('Кнопка с id play-bttn не найдена');
+  }
+});
